@@ -19,6 +19,8 @@ body{
     border-top:4px solid wheat ;
     border-bottom:4px solid wheat ;
     margin: -4px;
+    padding-bottom: 10px;
+    padding-top: 13px;
     
 }
 #navbar::after{
@@ -27,16 +29,8 @@ body{
     display: table;
    
 }
-#navbar ul{
-    list-style: none;
-     
-}
-#navbar li{
-    display: inline;
-    margin-right: 5vw;
-}
 
-#navbar li a{
+#navbar a{
     
     background-color: #1a2a70;
     padding: 10px;
@@ -47,13 +41,13 @@ body{
     color:black;
  
 }
-#navbar li a:hover{
+#navbar a:hover{
     background-color: yellow;
 }
 
 
 @media only screen and (max-width: 377px) {
-    #navbar li a{
+    #navbar a{
     
         background-color: #1a2a70;
         padding: 5px;
@@ -64,9 +58,16 @@ body{
         color:black;
      
     }
-    #navbar li{
+    #navbar a{
         display: inline;
-        margin-right: 5vw;
+  
+    }
+}
+@media only screen and (max-width:295px){
+    #navbar a{
+        padding: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 #banner img{
@@ -92,6 +93,7 @@ body{
 #content .hh2 {
     text-align: center;
 }
+
 
 #nxtbtn{
     vertical-align:middle ;
@@ -186,4 +188,7 @@ body{
     border-radius: 3px;
     
 
+}
+#content #tbl{
+    overflow-x: scroll;
 }
